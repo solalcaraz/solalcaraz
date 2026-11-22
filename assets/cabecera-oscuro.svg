@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="t">
+  <title id="t">María Sol Alcaraz. Software Developer, IA aplicada. Primero entiendo el problema. Después, el código.</title>
+  <rect x="1" y="1" width="1198" height="338" rx="20" fill="#0E0D10" stroke="#2A2830" stroke-width="2"/>
+  <g font-family="'DM Sans','Helvetica Neue',Arial,sans-serif" fill="#E8E2D0">
+    <text x="64" y="150" font-size="88" font-weight="700" letter-spacing="-2">María Sol</text>
+    <text x="64" y="244" font-size="88" font-weight="700" letter-spacing="-2">Alcaraz<tspan fill="#F4A27C" dx="6">*</tspan></text>
+  </g>
+  <line x1="640" y1="70" x2="640" y2="270" stroke="#2A2830" stroke-width="2"/>
+  <g font-family="'DM Sans','Helvetica Neue',Arial,sans-serif">
+    <text x="684" y="118" font-size="20" letter-spacing="3" fill="#A9A395">SOFTWARE DEVELOPER · IA APLICADA</text>
+    <text x="684" y="188" font-size="34" fill="#E8E2D0">Primero entiendo el <tspan font-family="'Newsreader',Georgia,'Times New Roman',serif" font-style="italic" fill="#9A9CF0" font-size="38">problema</tspan>.</text>
+    <text x="684" y="236" font-size="34" fill="#E8E2D0">Después, el código.</text>
+  </g>
+</svg>

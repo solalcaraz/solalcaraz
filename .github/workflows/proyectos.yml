@@ -1,0 +1,36 @@
+# Actualiza la tabla "Más proyectos" del README con la lista de la web (solalcaraz.github.io/proyectos.json).
+# Corre los lunes, una hora después de que la web se vuelve a armar (12:00 UTC), y también a mano.
+# Si la web no responde o el JSON viene roto, el script falla y no se cambia nada.
+# Si no hay cambios, no hace commit.
+
+name: Actualizar proyectos
+
+on:
+  schedule:
+    - cron: "0 13 * * 1" # lunes 13:00 UTC (10:00 en Argentina)
+  workflow_dispatch: # también se puede lanzar a mano desde la pestaña Actions
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Armar la tabla
+        run: node scripts/sincronizar-proyectos.mjs
+      - name: Subir el cambio, si hubo
+        run: |
+          if git diff --quiet README.md; then
+            echo "Sin cambios."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "Actualizar la tabla de proyectos"
+            git push
+          fi
