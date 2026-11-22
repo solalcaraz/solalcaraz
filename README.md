@@ -9,11 +9,6 @@
   <a href="https://solalcaraz.github.io/cv/CV-Maria-Sol-Alcaraz.pdf"><b>CV</b></a>
 </p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cifras-oscuro.svg">
-  <img src="assets/cifras-claro.svg" alt="En cifras: 2 webs entregadas a clientas reales; 99 a 100 en Lighthouse en celular (Calis Trainer); 20 pruebas end-to-end (Polar Canvas); 93 % menos de tiempo con Redis en BookLibre, con datos de prueba." width="100%">
-</picture>
-
 ## Sobre mí
 
 Software Developer en Buenos Aires, Argentina. Armo sitios, sistemas y herramientas pensando en quién los va a usar.
