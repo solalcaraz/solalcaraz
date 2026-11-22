@@ -1,10 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="t">
   <title id="t">María Sol Alcaraz. Software Developer, IA aplicada. Primero entiendo el problema. Después, el código.</title>
+  <style>
+    .ast { transform-origin: 416px 196px; animation: girar 30s linear infinite; }
+    @keyframes girar { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .ast { animation: none; } }
+  </style>
   <rect x="1" y="1" width="1198" height="338" rx="20" fill="#F5F0E4" stroke="#D9D1BC" stroke-width="2"/>
-  <g font-family="'DM Sans','Helvetica Neue',Arial,sans-serif" fill="#1B1A20">
-    <text x="64" y="150" font-size="88" font-weight="700" letter-spacing="-2">María Sol</text>
-    <text x="64" y="244" font-size="88" font-weight="700" letter-spacing="-2">Alcaraz<tspan fill="#B4471F" dx="6">*</tspan></text>
+  <g font-family="'DM Sans','Helvetica Neue',Arial,sans-serif" fill="#1B1A20" font-size="88" font-weight="700">
+    <text x="64" y="150" textLength="372" lengthAdjust="spacingAndGlyphs">María Sol</text>
+    <text x="64" y="244" textLength="300" lengthAdjust="spacingAndGlyphs">Alcaraz</text>
   </g>
+  <g class="ast"><g transform="translate(416 196)" stroke="#B4471F" stroke-width="10" stroke-linecap="round"><line x1="0" y1="-21" x2="0" y2="21" transform="rotate(0)"/><line x1="0" y1="-21" x2="0" y2="21" transform="rotate(60)"/><line x1="0" y1="-21" x2="0" y2="21" transform="rotate(120)"/></g></g>
   <line x1="640" y1="70" x2="640" y2="270" stroke="#D9D1BC" stroke-width="2"/>
   <g font-family="'DM Sans','Helvetica Neue',Arial,sans-serif">
     <text x="684" y="118" font-size="20" letter-spacing="3" fill="#5B574F">SOFTWARE DEVELOPER · IA APLICADA</text>
